@@ -42,7 +42,6 @@
     <Compile Include="Categories.cs">
       <DependentUpon>ModelCarrito.tt</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
     <Compile Include="CustomerDemographics.cs">
       <DependentUpon>ModelCarrito.tt</DependentUpon>
     </Compile>

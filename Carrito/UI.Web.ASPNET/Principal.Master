@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="UI.Web.ASPNET.Principal" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        <div id="Cabecera">
+            <div id="Titulo">
+                <h1>TP ASP.NET</h1>
+            </div>
+        </div>
+
+        <div id="MenuIzq">
+
+        </div>
+
+        <div id="Principal">
+             <asp:ContentPlaceHolder ID="ContenidoPrincipal" runat="server">
+        
+             </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="Pie">
+
+        </div>
+        
+       
+    </div>
+    </form>
+</body>
+</html>

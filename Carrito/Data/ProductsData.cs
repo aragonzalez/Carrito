@@ -3,10 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Entities;
 
 namespace Data
 {
-    class ProductsData
+    public class ProductsData
     {
+        public List<Products> GetAllProducts()
+        {
+            using (NorthwindEntities db = new NorthwindEntities())
+            {
+                return db.Products.ToList();
+            }
+        }
     }
 }
