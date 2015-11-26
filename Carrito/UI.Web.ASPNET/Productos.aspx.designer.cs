@@ -13,12 +13,12 @@ namespace UI.Web.ASPNET {
     public partial class Productos {
         
         /// <summary>
-        /// GridViewProductos control.
+        /// GridViewProducts control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridViewProductos;
+        protected global::System.Web.UI.WebControls.GridView GridViewProducts;
     }
 }
