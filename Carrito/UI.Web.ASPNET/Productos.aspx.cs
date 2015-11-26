@@ -49,6 +49,23 @@ namespace UI.Web.ASPNET
         protected void GridViewProducts_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.SelectedID = (int)this.GridViewProducts.SelectedValue;
+            int id = this.SelectedID;
+            if (id != 0)
+            {
+                this.GetProduct(id);
+            }
+            else 
+            {
+                this.errorLabel.Visible = true;
+            }
+
+        }
+
+        private void GetProduct(int id)
+        {
+            ProductsLogic pl = new ProductsLogic();
+            System.Collections.IList p = pl.GetProduct(id);
+
         }
     }
 }

@@ -11,9 +11,19 @@ namespace Data
     {
         public List<Products> GetAllProducts()
         {
-            using (NorthwindEntities db = new NorthwindEntities())
+            using (NorthwindEntities context = new NorthwindEntities())
             {
-                return db.Products.ToList();
+                return context.Products.ToList();
+            }
+        }
+
+        public Products GetProduct(int id)
+        {
+            Products prod = new Products();
+            using (NorthwindEntities context = new NorthwindEntities())
+            {
+                var query = from p in context.Products where p.ProductID == id select p;
+                query.ToList();
             }
         }
     }
