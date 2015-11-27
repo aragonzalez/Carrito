@@ -16,7 +16,7 @@ namespace Logic
             return pd.GetAllProducts();
         }
 
-        public System.Collections.IList GetProduct(int id)
+        public Products GetProduct(int id)
         {
             ProductsData pd = new ProductsData();
             return pd.GetProduct(id);

@@ -22,9 +22,11 @@ namespace Data
             Products prod = new Products();
             using (NorthwindEntities context = new NorthwindEntities())
             {
-                var query = from p in context.Products where p.ProductID == id select p;
-                query.ToList();
+               prod = (from p in context.Products where p.ProductID == id select p).First();
+               return prod;
             }
+
+
         }
     }
 }

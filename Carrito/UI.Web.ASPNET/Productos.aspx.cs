@@ -64,8 +64,10 @@ namespace UI.Web.ASPNET
         private void GetProduct(int id)
         {
             ProductsLogic pl = new ProductsLogic();
-            System.Collections.IList p = pl.GetProduct(id);
-
+            Products p = pl.GetProduct(id);
+            ProductPanel.Visible = true;
+            idProductTextBox.Text = p.ProductID.ToString();
+            productNameTextBox.Text = p.ProductName;          
         }
     }
 }
