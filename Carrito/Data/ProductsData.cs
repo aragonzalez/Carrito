@@ -13,7 +13,8 @@ namespace Data
         {
             using (NorthwindEntities context = new NorthwindEntities())
             {
-                return context.Products.ToList();
+              var query = from p in context.Products select p;
+              return query.ToList();
             }
         }
 
