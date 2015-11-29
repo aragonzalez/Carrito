@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link href="App_Themes/Tema/estilo.css" rel="stylesheet" />
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -14,11 +15,16 @@
         
         <div id="Cabecera">
             <div id="Titulo">
-                <h1>TP ASP.NET</h1>
+                <h2>TP ASP.NET</h2>
             </div>
         </div>
 
         <div id="MenuIzq">
+            <ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Productos</a></li>
+				<li><a href="#">Carrito</a></li>
+			</ul>
 
         </div>
 
